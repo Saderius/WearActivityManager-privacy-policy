@@ -1,0 +1,8 @@
+{
+  "name": "Wear Activity Manager",
+  "description": "Privacy policy and features page for the Wear OS app Wear Activity Manager, emphasizing privacy, offline operation, and custom complications.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
