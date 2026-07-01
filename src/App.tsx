@@ -173,7 +173,7 @@ export default function App() {
                 <strong>Device Data & Activities:</strong> The app relies on reading installed applications to populate your list of selectable intents and activities. This process occurs exclusively locally on your device. We never upload your installed app list or launch history to any external servers.
               </p>
               <p>
-                <strong>Diagnostics & Crash Reporting:</strong> To maintain app stability across the fragmented Wear OS ecosystem, we may utilize Firebase Crashlytics to monitor and resolve fatal errors. This only collects anonymous, non-identifying technical data (such as device model, OS version, and crash stack traces) strictly when the app crashes.
+                <strong>Diagnostics & Crash Reporting:</strong> To maintain app stability across the fragmented Wear OS ecosystem, we collect Crashlytics information to monitor and resolve fatal errors. This includes anonymous, non-identifying technical data (such as device model, OS version, and crash stack traces) strictly when the app crashes.
               </p>
             </Section>
 
@@ -183,7 +183,7 @@ export default function App() {
               </p>
               <ul className="list-disc pl-5 mt-4 space-y-2 text-slate-600">
                 <li><strong className="text-slate-700">Google Play Store:</strong> The app is securely distributed via the Play Store. Google Play may automatically collect basic installation and crash metrics as per standard Android device telemetry. (<a href="https://policies.google.com/privacy" className="text-sky-600 hover:text-sky-700 underline underline-offset-4 decoration-sky-500/30 transition-colors" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a>)</li>
-                <li><strong className="text-slate-700">Firebase Crashlytics:</strong> We may utilize Firebase Crashlytics exclusively for catching and resolving app crashes. This framework does not collect your name, location, or usage habits. (<a href="https://firebase.google.com/support/privacy" className="text-sky-600 hover:text-sky-700 underline underline-offset-4 decoration-sky-500/30 transition-colors" target="_blank" rel="noopener noreferrer">Firebase Privacy</a>)</li>
+                <li><strong className="text-slate-700">Firebase Crashlytics:</strong> We collect Crashlytics information exclusively for catching and resolving app crashes. This framework does not collect your name, location, or usage habits. (<a href="https://firebase.google.com/support/privacy" className="text-sky-600 hover:text-sky-700 underline underline-offset-4 decoration-sky-500/30 transition-colors" target="_blank" rel="noopener noreferrer">Firebase Privacy</a>)</li>
               </ul>
             </Section>
 
