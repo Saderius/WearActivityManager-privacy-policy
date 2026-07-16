@@ -1,8 +1,8 @@
 <div align="center">
-  <img src="https://i.imgur.com/TUPr7Sf.png" alt="Wear Activity Manager Logo" width="120" />
+  <img src="https://i.imgur.com/TUPr7Sf.png" alt="AnyTile Logo" width="120" />
   
-  <h1>⚡ Wear Activity Manager</h1>
-  <p><strong>The official landing page & privacy policy for Wear Activity Manager on Wear OS.</strong></p>
+  <h1>⚡ AnyTile: Wear OS Shortcuts</h1>
+  <p><strong>The official landing page & privacy policy for AnyTile on Wear OS.</strong></p>
   
   [![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)](#)
   [![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)](#)
@@ -13,10 +13,10 @@
 
 ## 📖 About
 
-This repository hosts the landing page and privacy policy site for **Wear Activity Manager**. 
-It guarantees full transparency and outlines strict privacy commitments: no data collection, no ads, and complete offline capability.
+This repository hosts the landing page and privacy policy site for **AnyTile: Wear OS Shortcuts**. 
+It guarantees full transparency and outlines strict privacy commitments: minimal data collection (for analytics and crash reporting only), no ads, and secure data handling.
 
-**Wear Activity Manager** is the ultimate Wear OS shortcut maker. It lets you bypass the menus entirely to launch exact app activities, deep links, and intents instantly from custom tiles and watch face complications.
+**AnyTile** is the ultimate Wear OS shortcut maker. It lets you bypass the menus entirely to launch exact app activities, deep links, and intents instantly from custom tiles and watch face complications.
 
 ## ✨ App Core Highlights
 

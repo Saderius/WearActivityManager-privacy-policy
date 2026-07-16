@@ -1,4 +1,4 @@
-import { Shield, EyeOff, Zap, Watch, Battery, Mail, LayoutGrid } from 'lucide-react';
+import { Shield, EyeOff, Zap, Watch, Battery, Mail, LayoutGrid, Smile } from 'lucide-react';
 import { motion } from 'motion/react';
 import { ReactNode, useState } from 'react';
 
@@ -70,7 +70,7 @@ export default function App() {
               {!imgError ? (
                 <img 
                   src="https://i.imgur.com/TUPr7Sf.png" 
-                  alt="Wear Activity Manager Logo" 
+                  alt="AnyTile Logo" 
                   className="w-full h-full object-cover" 
                   onError={() => setImgError(true)}
                 />
@@ -96,7 +96,7 @@ export default function App() {
               className="text-4xl md:text-6xl font-display text-slate-900 tracking-tight font-bold mb-6 leading-tight"
               id="page-title"
             >
-              Wear Activity Manager
+              AnyTile: Wear OS Shortcuts
             </motion.h1>
             
             <motion.p 
@@ -113,7 +113,7 @@ export default function App() {
                transition={{ duration: 0.6, delay: 0.3 }}
                className="text-md md:text-lg text-slate-600 max-w-2xl mx-auto mt-6"
             >
-               The ultimate Wear OS shortcut maker. Create custom tiles and complications to launch any app activity instantly. Built for extreme efficiency with zero ads and strict privacy.
+               The ultimate smartwatch shortcut maker. Create custom tiles and complications to launch any app activity instantly. Built for extreme efficiency with zero ads and strict privacy.
             </motion.p>
           </div>
         </header>
@@ -141,8 +141,8 @@ export default function App() {
             />
             <FeatureCard 
               icon={Shield}
-              title="Zero Data Collection"
-              description="We do not collect, store, or share personal data. Your shortcuts and preferences stay securely on your device."
+              title="Privacy Focused"
+              description="We do not share any data with third parties. Minimal telemetry (like app interactions and crash logs) is collected securely to improve stability, and is always encrypted in transit."
               delay={0.4}
             />
             <FeatureCard 
@@ -150,6 +150,12 @@ export default function App() {
               title="100% Free & Ad-Free"
               description="No premium paywalls. No subscriptions. Absolutely no annoying advertisements. Just pure control."
               delay={0.5}
+            />
+            <FeatureCard 
+              icon={Smile}
+              title="Families Policy Compliant"
+              description="We are fully committed to the Google Play Families Policy. Our app provides a safe, secure, and appropriate environment for users of all ages."
+              delay={0.6}
             />
           </section>
 
@@ -164,16 +170,16 @@ export default function App() {
 
             <Section title="1. Information Collection and Use" id="data-collection">
               <p>
-                <b>Wear Activity Manager</b> is a productivity utility designed for Wear OS smartwatches to improve interaction speeds. We adamantly prioritize your privacy and have engineered the app to execute completely offline without demanding or intercepting your personal data.
+                <b>AnyTile: Wear OS Shortcuts</b> is a productivity utility designed for Wear OS smartwatches to improve interaction speeds. We adamantly prioritize your privacy and ensure that no data is shared with third parties.
               </p>
               <p>
                 <strong>Personal Data:</strong> We do not actively prompt for, collect, store, or transmit any Personally Identifiable Information (PII) such as your name, email address, physical location, or contact details.
               </p>
               <p>
-                <strong>Device Data & Activities:</strong> The app relies on reading installed applications to populate your list of selectable intents and activities. This process occurs exclusively locally on your device. We never upload your installed app list or launch history to any external servers.
+                <strong>App Activity & Analytics:</strong> To help us improve the user experience, we collect basic app interactions, device or other IDs. All data collected is encrypted in transit transferred over a secure connection.
               </p>
               <p>
-                <strong>Diagnostics & Crash Reporting:</strong> To maintain app stability across the fragmented Wear OS ecosystem, we collect Crashlytics information to monitor and resolve fatal errors. This includes anonymous, non-identifying technical data (such as device model, OS version, and crash stack traces) strictly when the app crashes.
+                <strong>Diagnostics & Crash Reporting:</strong> To maintain app stability across the fragmented Wear OS ecosystem, we collect app info and performance metrics, including crash logs and diagnostics, to monitor and resolve fatal errors.
               </p>
             </Section>
 
@@ -189,14 +195,27 @@ export default function App() {
 
             <Section title="3. User Rights & Data Control" id="user-rights">
               <p>
-                Because Wear Activity Manager does not utilize remote servers or user accounts, there is no centralized database holding your profiles. 
+                Because AnyTile does not utilize remote servers or user accounts, there is no centralized database holding your profiles. 
               </p>
               <p>
                 Any shortcuts, configurations, and tile layouts you create are stored natively and securely within your device's local application sandbox. You retain absolute control over this data. You can instantly erase all local configuration by uninstalling the application or by clearing its cache/data directly via your Wear OS settings menu.
               </p>
+              <p>
+                <strong>Opt-Out of Data Collection:</strong> We respect your choice regarding data collection. You have the full ability to turn off the collection of app activity, analytics, crash logs, and diagnostics at any time directly from the app's settings menu.
+              </p>
             </Section>
 
-            <Section title="4. Permissions Justification" id="permissions">
+            <Section title="4. Security & Compliance" id="compliance">
+              <p>
+                We are committed to maintaining a secure and safe environment for all our users:
+              </p>
+              <ul className="list-disc pl-5 mt-4 space-y-2 text-slate-600">
+                <li><strong className="text-slate-700">Data Encryption:</strong> Your data is transferred over a secure connection and is encrypted in transit.</li>
+                <li><strong className="text-slate-700">Play Families Policy:</strong> The developer has committed to follow the Google Play Families Policy for this application, ensuring it is appropriate for all ages.</li>
+              </ul>
+            </Section>
+
+            <Section title="5. Permissions Justification" id="permissions">
               <p>
                 Our philosophy is minimal required access. The app only requests permissions that are fundamentally necessary for its core operation:
               </p>
@@ -206,7 +225,7 @@ export default function App() {
               </ul>
             </Section>
 
-            <Section title="5. Contact Information" id="contact">
+            <Section title="6. Contact Information" id="contact">
               <p>
                 If you have any questions, feedback, or concerns regarding this Privacy Policy or the app's functionality, please reach out to the developer directly.
               </p>
@@ -227,7 +246,7 @@ export default function App() {
             <div className="mt-16 pt-8 border-t border-slate-200/60 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-500">
               <div className="flex items-center gap-2">
                 <Watch size={16} className="text-slate-400" />
-                <span>Wear Activity Manager</span>
+                <span>AnyTile</span>
               </div>
               <div>
                 &copy; {new Date().getFullYear()} All rights reserved.
